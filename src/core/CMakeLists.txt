@@ -85,7 +85,7 @@ if(${MP_UNITS_API_NATURAL_UNITS})
     )
 endif()
 
-if(NOT MP_UNITS_API_FREESTANDING)
+# if(NOT MP_UNITS_API_FREESTANDING)
     target_sources(
         mp-units-core
         PUBLIC FILE_SET
@@ -105,7 +105,7 @@ if(NOT MP_UNITS_API_FREESTANDING)
                include/mp-units/ostream.h
                include/mp-units/random.h
     )
-endif()
+# endif()
 
 # Disable VERIFY_INTERFACE_HEADER_SETS
 set_source_files_properties(include/mp-units/format.h include/mp-units/ostream.h PROPERTIES SKIP_LINTING ON)
